@@ -1,5 +1,5 @@
 
-scalaVersion := "2.11.1"
+scalaVersion := "2.12.4"
 
 // Smile:
 libraryDependencies += "com.github.haifengl" % "smile-core" % "1.5.3"
@@ -8,7 +8,7 @@ libraryDependencies += "com.github.haifengl" %% "smile-scala" % "1.5.3"
 
 // alternative: bruneli:
 
-libraryDependencies += "com.github.bruneli.scalaopt" % "scalaopt-core_2.11" % "0.2"
+//libraryDependencies += "com.github.bruneli.scalaopt" % "scalaopt-core_2.11" % "0.2"
 
 
 // breeze:
