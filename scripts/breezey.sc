@@ -6,9 +6,15 @@ case class Layout(linesY: DenseVector[Double], scholionHeight: DenseVector[Doubl
 
 
   def plotSolution(solution: DenseVector[Double]) = {
-    println("Plot solution " + solution )
-    val cum = accumulate(scholionHeight + solution) - scholionHeight
-    println("Cumulated: " + cum)
+    println("\n\nPlot solution:")
+    println("Adjustments:" + solution )
+    val cumul = accumulate(scholionHeight + solution) - scholionHeight
+    println("Cumulative bases: " + cumul)
+    val tops = cumul + scholionHeight
+    println("Cumulative tops: " +  tops)
+    for (i <- 0 until tops.size) {
+      println(cumul(i) + "--" + tops(i))
+    }
   }
   val diffFunc = new DiffFunction[DenseVector[Double]] {
 
